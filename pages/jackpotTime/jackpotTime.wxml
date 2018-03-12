@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="portrait">
+        <image src="{{userPic}}"></image>
+        <text class="name">{{userName}}</text>
+    </view>
+    <view class="money">
+        <text>100.000 </text>
+        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+        <text> 唾手可得！撸起柚子开始答题(共10题)</text>
+    </view>
+    <view class="box">
+        <text>{{time}}</text>
+        <canvas  canvas-id="wxCanvasTest1"></canvas>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/challenge/challenge",
+    "pages/recharge/recharge",
+    "pages/friend/friend",
+    "pages/answer/answer",
+    "pages/store/store",
+    "pages/info/info",
+    "pages/storeRecord/storeRecord",
+    "pages/succeed/succeed",
+    "pages/answerResult/answerResult",
+    "pages/prize/prize",
+    "pages/jackpot/jackpot",
+    "pages/jackpotTime/jackpotTime"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3d3587",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"#ffffff"
+  }
+}

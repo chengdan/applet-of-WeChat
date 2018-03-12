@@ -1,0 +1,119 @@
+<view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="head">
+        <image src="{{userPic}}">
+            <view class="time">
+                <text>{{hours}}</text>
+                <text>:</text>
+                <text>{{minutes}}</text>
+                <text>:</text>
+                <text>{{seconds}}</text>
+            </view>
+        </image>
+        <text class="name">{{userName}}</text>
+    </view>
+    <view class="number" hidden="{{titleShow}}">{{title}}</view>
+    <view class="answer" hidden="{{answer}}">
+        <view class="problem">{{subject}}</view>
+        <button  class="bg {{index===count?bg:''}}" wx:for="{{record}}" wx:key="{{index}}" bindtap="affirm" data-id="{{index}}">{{item.value}}</button>
+    </view>
+    <view class="result" hidden="{{result}}">
+        <button class="error"  hidden="{{errorIcon}}">
+            <image src="http://47.97.185.141/xcx-images/cuo_@3x.png"></image>
+            <text>{{choose}}</text>
+        </button>
+        <button class="correct">
+            <image src="http://47.97.185.141/xcx-images/dui_@3x.png"></image>
+            <text>{{right}}</text>
+        </button>
+    </view>
+    <view class="success" hidden="{{success}}">
+        <view class="box">
+            <view class="top">
+                <view class="s_head">
+                    <image src="http://47.97.185.141/xcx-images/tioazhanchengong_@3x.png"></image>
+                    <text>挑战成功</text>
+                </view>
+                <view class="s_number">
+                    <text>总答题数</text>
+                    <text class="red">10</text>
+                </view>
+                <view class="s_time">
+                    <view>总用时</view>
+                    <text class="red">{{hours}}</text>
+                    <text>分</text>
+                    <text class="red">{{minutes}}</text>
+                    <text>秒</text>
+                    <text class="red">{{seconds}}</text>
+                </view>
+                <view class="s_ranking">
+                    <text>当前排名</text>
+                    <text class="red">{{ranking}}</text>
+                </view>
+                <view class="s_info">
+                    <view>第一名将获得50,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                    <view>第二名将获得30,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                    <view>第三名将获得20,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                    <view>4-15名各获得1,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                    <view class="last">排名以最终名次为准</view>
+                </view>
+            </view>
+            <view class="continue">
+                <image src="http://47.97.185.141/xcx-images/jixuizhaoyue_@3x.png"></image>
+                <text bindtap="again">继续挑战</text>
+            </view>
+            <view class="button">
+                <button class="next" open-type="share">分享战果</button>
+                <button bindtap="close">闭关修炼</button>
+            </view>
+        </view>
+    </view>
+    <view class="defeated" hidden="{{defeated}}">
+        <view class="box">
+            <view class="top">
+                <view class="s_head">
+                    <image src="http://47.97.185.141/xcx-images/shibai_@3x.png"></image>
+                    <text>惜败</text>
+                </view>
+                <view class="s_info">
+                    <view>第一名将获得50,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                    <view>第二名将获得30,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                    <view>第三名将获得20,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                    <view>4-15名各获得1,000
+                        <image src="http://47.97.185.141/xcx-images/1@3x.png"></image>
+                        奖励
+                    </view>
+                </view>
+                <view class="sorry">(很遗憾您没有入围奖励名单)</view>
+            </view>
+            <view class="continue" bindtap="again">
+                <image src="http://47.97.185.141/xcx-images/jixuizhaoyue_@3x.png"></image>
+                <text>继续挑战</text>
+            </view>
+            <view class="button">
+                <button class="next" open-type="share">分享战果</button>
+                <button bindtap="close">闭关修炼</button>
+            </view>
+        </view>
+    </view>
+</view>

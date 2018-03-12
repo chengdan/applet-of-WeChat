@@ -1,0 +1,47 @@
+page{
+    background-image: none;
+}
+.container{
+    padding: 0;
+}
+
+.pic image{
+    width: 82rpx;
+    height: 82rpx;
+    margin:auto;
+    margin-top: 118rpx;
+    display: block;
+}
+.pic view{
+    color: rgb(102,102,102);
+    font-size: 33rpx;
+    text-align: center;
+    margin-top: 18rpx;
+}
+
+.tex{
+    margin-top: 63rpx;
+    color: rgb(153,153,153);
+    padding: 20rpx;
+}
+
+.btn{
+    padding: 0 100rpx;
+    margin-top: 108rpx;
+}
+.btn .share,.close{
+    width: 250rpx;
+    height: 70rpx;
+    float: left;
+    line-height: 70rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    color: #fff;
+}
+.btn .share{
+    background-color: #fb6c4a;
+    margin-right: 45rpx;
+}
+.btn .close{
+    background-color: #a3b238;
+}

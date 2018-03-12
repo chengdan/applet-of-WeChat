@@ -1,0 +1,50 @@
+<view class="container">
+    <!--用户信息-->
+    <view class="user">
+        <view class="firstUser">
+            <view class="userInfo">
+                <view>{{userName}}</view>
+                <view class="money">
+                    <image src="http://47.97.185.141/xcx-images//jinbi_@3x.png"></image>
+                    <text>1400</text>
+                </view>
+            </view>
+            <image src="{{userPic}}" class="pic"></image>
+
+            <image src="http://47.97.185.141/xcx-images//huanguan_@3x.png" class="hg" hidden="{{victory === '胜' ? false : true}}"></image>
+        </view>
+
+        <view class="lastUser">
+            <image src="{{pic}}" class="pic"></image>
+            <view class="userInfo">
+                <view>{{name}}</view>
+                <view class="money">
+                    <image src="http://47.97.185.141/xcx-images//jinbi_@3x.png"></image>
+                    <text>1400</text>
+                </view>
+            </view>
+
+            <image src="http://47.97.185.141/xcx-images//huanguan_@3x.png" class="hg" hidden="{{win === '胜' ? false : true}}"></image>
+        </view>
+    </view>
+    <view class="progress">
+        <view class="fl">
+            <text>{{myGrade}}分</text><text class="victory">{{victory}}</text>
+        </view>
+        <view class="fr">
+            <text class="toRight">{{myGr}}分</text><text class="defeated">{{win}}</text>
+        </view>
+    </view>
+
+    <!--继续挑战-->
+    <view class="again" bindtap="getAgain">
+        <image src="http://47.97.185.141/xcx-images//jixuizhaoyue_@3x.png"></image>
+        <text>继续挑战</text>
+    </view>
+
+    <!--分享按钮-->
+    <view class="btn">
+        <button class="bey" open-type="share">分享战果</button>
+        <button class="next" bindtap="getClose">闭关修炼</button>
+    </view>
+</view>

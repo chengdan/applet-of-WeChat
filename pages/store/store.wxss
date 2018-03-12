@@ -1,0 +1,74 @@
+page{
+    background-image: none;
+    padding: 0;
+}
+.container{
+    padding: 0;
+}
+.exchange{
+    color: #111;
+    position: absolute;
+    top: 0;
+    right: 20rpx;
+}
+/*商品*/
+.goods{
+    margin-top: 60rpx;
+}
+.goods .item{
+    box-sizing: border-box;
+    padding-left: 6rpx;
+}
+.goods .itemInfo image{
+    width: 275rpx;
+    height: 273rpx;
+}
+.goods .item .itemInfo:nth-child(even){
+    border-left: none;
+}
+.goods .item .itemInfo{
+    float: left;
+    border: 1rpx solid #eee;
+    /*border-top: none;*/
+    width: 370rpx;
+    height: 550rpx;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    padding: 30rpx 20rpx;
+}
+.goods .itemInfo .title{
+    margin-top: 30rpx;
+    width: 100%;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.goods .itemInfo .money{
+    width: 100%;
+    color: #ff0000;
+    position: absolute;
+    bottom: 70rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.goods .itemInfo .money .zb{
+    position: absolute;
+    left: 10rpx;
+
+}
+.goods .money .zb text{
+    font-size: 32rpx;
+}
+.goods .itemInfo .money .exBtn{
+    width: 115rpx;
+    height: 50rpx;
+    background-color: #ff0000;
+    border-radius: 50rpx;
+    position: absolute;
+    right: 10rpx;
+    line-height: 50rpx;
+    color: #fff;
+}

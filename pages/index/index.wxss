@@ -1,0 +1,330 @@
+/**index.wxss**/
+page{
+  padding: 0;
+  background-image: url("http://47.97.185.141/xcx-images/shouyebeijing.jpg");
+}
+.container{
+  padding-bottom: 50rpx;
+}
+/*顶部*/
+.head{
+  width: 710rpx;
+  height: 280rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+.head>image{
+  width: 710rpx;
+  height: 280rpx;
+  border-radius: 10rpx;
+}
+.head .pic{
+  width: 124rpx;
+  height: 124rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.head .pic>image{
+  width: 124rpx;
+  height: 124rpx;
+  border-radius: 50%;
+}
+.head .pic .money{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.head .pic .money>image{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: bottom;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.head .pic .money text{
+  text-align: center;
+  margin-left: 35rpx;
+}
+
+.head .accept{
+  height: 35rpx;
+  position: absolute;
+  right: 23rpx;
+  bottom: 70rpx;
+}
+.head .accept text{
+  color: #ff3030;
+}
+.head .accept>image{
+  width: 160rpx;
+  height: 35rpx;
+  margin-top: 10rpx;
+  position: absolute;
+  right: 0;
+}
+
+
+/*公告*/
+.affiche{
+  margin-top: 20rpx;
+  background-color: #2286de;
+  width: 710rpx;
+  height: 128rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.affiche .title{
+  position: absolute;
+  left: 25rpx;
+  top: 25rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.affiche .afficheInfo{
+  width: 505rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 137rpx;
+}
+.affiche .numberOne{
+  height: 50rpx;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+}
+.affiche .numberOne>image{
+  width: 74rpx;
+  height: 48rpx;
+  vertical-align: middle;
+}
+.affiche .afficheInfo .ranking{
+  position: absolute;
+  left: 43rpx;
+  display: flex;
+  width: 400rpx;
+}
+.affiche .afficheInfo .ranking view{
+  height: 45rpx;
+  overflow: hidden;
+}
+
+
+/*内容*/
+.info{
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  margin-bottom: 22rpx;
+}
+.info .left{
+  float: left;
+  width: 468rpx;
+}
+/*奖池赛*/
+.info .left .prize{
+  height: 264rpx;
+  width: 468rpx;
+  background-color: #f2b309;
+  border-radius: 10rpx;
+  display: flex;
+  padding: 20rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+.info .prize .title{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.info .left .prize view{
+  flex: 1;
+}
+.info .prize .money{
+  position: absolute;
+  bottom: 34rpx;
+  left: 20rpx;
+  color: #fff000;
+}
+.info .left .prize .money>image{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.info .left .prize .pic image{
+  width: 190rpx;
+  height: 153rpx;
+  margin-top: 43rpx;
+}
+
+.info .left .other{
+  width: 468rpx;
+  height: 450rpx;
+  margin-top: 20rpx;
+}
+.info .other .otherLeft{
+  float: left;
+  width: 219rpx;
+  height: 450rpx;
+}
+/*好友对战*/
+.info .otherLeft .friend{
+  width: 219rpx;
+  height: 272rpx;
+  background-color: #2b51bd;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.info .otherLeft .friend text{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.info .otherLeft .friend image{
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 10rpx;
+  margin-left: 5rpx;
+}
+/*充值礼包*/
+.info .otherLeft .recharge{
+  width: 219rpx;
+  height:156rpx;
+  background-color: #8009e9;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.info .otherLeft .recharge text{
+  font-weight: 700;
+}
+.info .otherLeft .recharge image{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 15rpx;
+  vertical-align: bottom;
+}
+.info .other .otherRight{
+  float: left;
+  width: 219rpx;
+  height: 450rpx;
+  margin-left: 30rpx;
+}
+/*挑战赛*/
+.info .otherRight .challenge{
+  width: 219rpx;
+  height: 272rpx;
+  background-color: #1be0f2;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.info .otherRight .challenge text{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.info .otherRight .challenge image{
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 10rpx;
+  margin-left: 5rpx;
+}
+/*积分商城*/
+.info .otherRight .store{
+  width: 219rpx;
+  height:156rpx;
+  /*background-color: #ad12ab;*/
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.info .otherRight .store text{
+  font-weight: 700;
+}
+.info .otherRight .store image{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 15rpx;
+  vertical-align: bottom;
+}
+/*排名*/
+.info .right{
+  float: left;
+  width: 212rpx;
+  height: 730rpx;
+  background-color: #2286de;
+  margin-left: 30rpx;
+  border-radius: 10rpx;
+  padding: 18rpx 12rpx;
+  box-sizing: border-box;
+}
+.info .right>text{
+  width: 100%;
+  display: block;
+  font-size: 35rpx;
+  text-align: center;
+  font-weight: 700;
+}
+.info .item{
+  margin-bottom: 14rpx;
+  margin-top: 35rpx;
+}
+.info .item .user .money {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.info .item .user text{
+  display: inline-block;
+  width: 120rpx;
+  height: 40rpx;
+  overflow: hidden;
+  /*text-overflow:ellipsis;*/
+  /*white-space: nowrap;*/
+}
+.info .item .user image{
+  width: 51rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-right: 7rpx;
+  border: 1px solid salmon;
+}
+.info .item .money image{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-right: 7rpx;
+}
+.info .item .money{
+  color: #fff000;
+  font-size: 28rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

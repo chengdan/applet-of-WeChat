@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="head">
+        <text>手速快 知识广 就能赢大奖</text>
+    </view>
+    <view class="banner">
+        <image src="http://47.97.185.141/xcx-images/jiangchi_@3x.png"></image>
+    </view>
+    <view class="accumulate">
+        <text>奖池已累积：</text>
+        <text>90,000</text>
+    </view>
+    <view class="news">
+        <image src="http://47.97.185.141/xcx-images/zhuyishixiang_@3x.png"></image>
+        <text>参赛消耗200智币</text>
+    </view>
+    <view class="game" bindtap="toGame">
+        <image src="http://47.97.185.141/xcx-images/likecansai_@3x.png"></image>
+        <text>立即参赛</text>
+    </view>
+    <view class="invite">
+        <button open-type="share">邀请好友</button>
+    </view>
+    <view class="modal" hidden="{{hidden}}" bindtap="modalHide">
+        <text class="title">奖池赛规程：</text>
+        <text>1、报名参赛者，入场答题需贡献200智币</text>
+        <text>2、每轮奖池累计至100,000智币即开启奖池</text>
+        <text>3、每轮答题共10题，用时最少者为胜</text>
+        <text>4、第一名将获得50,000智币，第二名将获得30,000智币，第三名将获得20,000智币，4到15名分别获得1,000智币</text>
+    </view>
+</view>

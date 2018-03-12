@@ -1,0 +1,39 @@
+<view class="container">
+    <!--顶部-->
+    <view class="head">
+            <image src="http://47.97.185.141/xcx-images/banner@3x.png"></image>
+        </view>
+
+    <!--内容-->
+    <view class="main">
+            <view class="firstMain">
+                <image src="http://47.97.185.141/xcx-images/libao_@3x.png" data-jb="588" data-money="6" bindtap="getModule"></image>
+                <image src="http://47.97.185.141/xcx-images/libao_02_@3x.png" data-jb="1988" data-money="18" bindtap="getModule"></image>
+                <image src="http://47.97.185.141/xcx-images/libao_03_@3x.png" data-jb="5188" data-money="48" bindtap="getModule"></image>
+            </view>
+
+            <view class="secondMain">
+                <image src="http://47.97.185.141/xcx-images/libao_04_@3x.png" data-jb="7888" data-money="68" bindtap="getModule"></image>
+                <image src="http://47.97.185.141/xcx-images/libao_05_@3x.png" data-jb="12888" data-money="98" bindtap="getModule"></image>
+            </view>
+
+            <view class="lastMain">
+                <image src="http://47.97.185.141/xcx-images/libao_06_@3x.png" data-jb="138888" data-money="998" bindtap="getModule"></image>
+            </view>
+        </view>
+
+    <!--模态框-->
+    <view class="module" hidden="{{hidden}}">
+            <view class="mode">
+                <image src="http://47.97.185.141/xcx-images/baoxiang@3x.png" class="ball"></image>
+                <image src="http://47.97.185.141/xcx-images/guanbi_@3x.png" class="close" bindtap="getClose"></image>
+                <view class="money">
+                    <image src="http://47.97.185.141/xcx-images/jinbi_@3x.png"></image>
+                    <text>{{jinbi}}</text>
+                </view>
+                <view class="btn" bindtap="getShopping">
+                    ￥<text>{{money}}</text>购买
+                </view>
+            </view>
+        </view>
+</view>

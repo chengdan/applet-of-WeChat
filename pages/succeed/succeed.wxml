@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="pic">
+        <image src="http://47.97.185.141/xcx-images/duihuanchenggong_@3x.png"></image>
+        <view>商品兑换成功</view>
+    </view>
+    <view class="tex">
+        春节期间，2月12日到2月26日，暂停发货，兑换成功的宝宝，我们将在节假日之后与您联系，第一时间给您寄出礼品
+    </view>
+    <view class="btn">
+        <button class="share" open-type="share">分享战果</button>
+        <button class="close" bindtap="getClose">闭关修炼</button>
+    </view>
+</view>

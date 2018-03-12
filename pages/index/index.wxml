@@ -1,0 +1,101 @@
+<view class="container">
+
+  <!--顶部-->
+  <view class="head">
+    <image src="http://47.97.185.141/xcx-images/beijing_@3x.png"></image>
+    <view class="pic">
+      <image src="{{userPic}}"></image>
+      <view class="name">{{userName}}</view>
+      <view class="money">
+        <image src="http://47.97.185.141/xcx-images/tucen1@3x.png"></image>
+        <text>{{money}}</text>
+      </view>
+    </view>
+
+    <view class="accept">
+      <view>奖池赛排名 <text>{{rank}}</text></view>
+      <image src="{{image}}" bindtap="prize"></image>
+    </view>
+
+  </view>
+
+  <!--公告-->
+  <view class="affiche">
+    <view class="title">公告：</view>
+    <view class="afficheInfo">
+      <view class="numberOne">
+        <image src="http://47.97.185.141/xcx-images/huatong_@3x.png"></image>
+        <text>{{msg}}</text>
+      </view>
+      <view class="ranking">
+        <view>{{msgT}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!--内容-->
+  <view class="info">
+    <!--游戏区-->
+    <view class="left">
+      <!--奖池赛-->
+      <view class="prize" bindtap="getJackpot">
+
+        <view>
+          <text class="title">奖池赛</text>
+          <view class="money">
+            <image src="http://47.97.185.141/xcx-images/jinbi_@3x.png"></image>
+            <text>200,000</text>
+          </view>
+        </view>
+
+        <view class="pic">
+          <image src="http://47.97.185.141/xcx-images/jinbii_@3x.png"></image>
+        </view>
+
+      </view>
+      <!--其它赛区-->
+      <view class="other">
+        <view class="otherLeft">
+          <!--好友对战-->
+          <view class="friend" bindtap="getFriend">
+            <text>好友对战</text>
+            <image src="http://47.97.185.141/xcx-images/vs_@3x.png"></image>
+          </view>
+          <!--充值礼包-->
+          <view class="recharge" bindtap="getRecharge">
+            <text>充值礼包</text>
+            <image src="http://47.97.185.141/xcx-images/chongzhilibao_@3x.png"></image>
+          </view>
+        </view>
+
+        <view class="otherRight">
+          <!--挑战赛-->
+          <view class="challenge" bindtap="getChallenge">
+            <text>挑战赛</text>
+            <image src="http://47.97.185.141/xcx-images/paihanbang_@3x.png"></image>
+          </view>
+          <!--积分商城-->
+          <view class="store" bindtap="getStore">
+            <text>暂未开放</text>
+            <!--<image src="http://47.97.185.141/xcx-images/jifenshangcheng_@3x.png"></image>-->
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!--排名-->
+    <view class="right">
+      <text>智豪榜</text>
+      <view class="item" wx:for="{{wisdom}}" wx:key="{{index}}">
+        <view class="user">
+          <image src="{{wisdom[index].user_photo}}"></image>
+          <text>{{wisdom[index].user_name}}</text>
+        </view>
+        <view class="money">
+          <image src="http://47.97.185.141/xcx-images/tucen1@3x.png"></image>
+          <text>{{wisdom[index].user_account}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

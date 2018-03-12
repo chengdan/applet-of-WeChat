@@ -1,0 +1,176 @@
+page,.container{
+    padding: 0;
+}
+/*用户信息*/
+.user{
+    width: 100%;
+    height: 171rpx;
+    margin-top: 150rpx;
+    position: relative;
+}
+.user .firstUser .hg{
+    width:150rpx;
+    height:92rpx;
+    position:absolute;
+    left:175rpx;
+    top:-31rpx;
+    transform:rotate(18deg)
+}
+.user .lastUser .hg{
+    width:150rpx;
+    height:92rpx;
+    position:absolute;
+    left:-10rpx;
+    top:-31rpx;
+    transform:rotate(-27deg)
+}
+.user .firstUser,.lastUser{
+    width:310rpx;
+    height: 171rpx;
+}
+.user .firstUser .time,.lastUser .time{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 70rpx;
+    font-weight: 700;
+}
+.user .firstUser .time{
+    right: 45rpx;
+}
+.lastUser .time{
+    left: 45rpx;
+}
+.user .firstUser{
+    background-color: #d34685;
+    border-radius: 0 150rpx 150rpx 0;
+    position: absolute;
+}
+.user .firstUser .userInfo{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left:35rpx;
+}
+.user .firstUser .userInfo image{
+    width: 25rpx;
+    height: 25rpx;
+}
+.user .pic{
+    width: 144rpx;
+    height: 144rpx;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border: 10rpx solid #fff;
+    box-sizing: border-box;
+}
+.user .firstUser image{
+    right: 20rpx;
+}
+.user .lastUser{
+    position: absolute;
+    background-color: #5c89e8;
+    border-radius: 150rpx 0  0 150rpx;
+    right: 0;
+}
+.user .lastUser image{
+    left: 20rpx;
+}
+.user .lastUser .userInfo image{
+    width: 25rpx;
+    height: 25rpx;
+}
+.user .lastUser .userInfo{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 190rpx;
+}
+.progress{
+    height: 100rpx;
+    width: 100%;
+    display: flex;
+}
+.progress view{
+    flex: 1;
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: relative;
+    font-size: 40rpx;
+    padding: 0 50rpx;
+}
+.progress .fl{
+    background-color: #d34685;
+    border-radius: 0 100rpx 100rpx 0;
+}
+.progress .fr{
+    background-color: #5c89e8;
+    border-radius: 100rpx 0  0 100rpx;
+}
+.progress .fr .toRight{
+    margin-left: 150rpx;
+}
+.progress .victory,.defeated{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60rpx;
+}
+.progress .victory{
+    right: 40rpx;
+}
+.progress .defeated{
+    left: 40rpx;
+}
+
+.again{
+    width: 100%;
+    height: 100%;
+    margin-top: 200rpx;
+    text-align: center;
+    position: relative;
+}
+.again image{
+    width: 239rpx;
+    height: 239rpx;
+}
+.again text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(77,68,163);
+    font-size: 34rpx;
+}
+
+.btn{
+    margin-top: 20rpx;
+    padding: 0 100rpx;
+    text-align: center;
+}
+.btn .bey,.next{
+    float: left;
+    width: 260rpx;
+    height: 80rpx;
+    border-radius: 10rpx;
+    font-size: 40rpx;
+    line-height: 80rpx;
+}
+.btn .bey{
+    background-color: rgb(244,170,0);
+    color: #fff;
+}
+.btn .next{
+    background-color: rgb(165,207,36);
+    margin-left: 28rpx;
+    color: #fff;
+}
+.btn .tex{
+    margin-top: 28rpx;
+    color: rgb(216,204,255);
+}

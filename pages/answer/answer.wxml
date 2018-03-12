@@ -1,0 +1,65 @@
+<view class="container">
+    <!--用户信息-->
+    <view class="user">
+        <view class="firstUser">
+            <view class="userInfo">
+                <view>{{userName}}</view>
+                <view class="money">
+                    <image src="http://47.97.185.141/xcx-images/jinbi_@3x.png"></image>
+                    <text>1400</text>
+                </view>
+            </view>
+            <image src="{{userPic}}" class="pic"></image>
+            <view class="progress">
+                <view class="fl">
+                    <view class="bar" style="width:{{myWidth}}rpx"></view>
+                </view>
+                <text class="fr">{{myGrade}}</text>
+            </view>
+            <view class="time" hidden="{{answers}}">{{time}}S</view>
+        </view>
+
+        <view class="lastUser">
+            <image src="{{pic}}" class="pic"></image>
+            <view class="userInfo">
+                <view>{{name}}</view>
+                <view class="money">
+                    <image src="http://47.97.185.141/xcx-images/jinbi_@3x.png"></image>
+                    <text>1400</text>
+                </view>
+            </view>
+            <view class="progress">
+                <text class="fl">{{myGr}}</text>
+                <view class="fr">
+                    <view class="bar" style="width:{{yWidth}}rpx"></view>
+                </view>
+            </view>
+            <view class="time" hidden="{{answers}}">{{time}}S</view>
+        </view>
+    </view>
+
+    <view class="hint" hidden="{{hint}}">{{title}}</view>
+
+    <!--题目-->
+    <view class="topic">
+        <view class="answer" hidden="{{answer}}">
+            <view>
+                <label>{{subject}}</label>
+            </view>
+            <button class="bg {{index===count?bg:''}}" wx:for="{{record}}" wx:key="{{index}}" bindtap="affirm" data-id="{{index}}">
+                {{item.value}}
+            </button>
+        </view>
+        <view class="result" hidden="{{result}}">
+            <button class="error" hidden="{{errorIcon}}">
+                <image src="http://47.97.185.141/xcx-images/cuo_@3x.png"></image>
+                <text>{{choose}}</text>
+            </button>
+            <button class="correct">
+                <image src="http://47.97.185.141/xcx-images/dui_@3x.png"></image>
+                <text>{{right}}</text>
+            </button>
+        </view>
+    </view>
+</view>
+

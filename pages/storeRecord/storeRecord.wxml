@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="item" bindtap="getUser" wx:for="{{infoList}}" data-id="{{index}}" wx:key="{{index}}">
+        <view class="goods">
+            <image src="{{'http://datiback.51laiding.com/'+infoList[index].goods_photo}}"></image>
+            <view>
+                <view class="time">
+                    <view>{{infoList[index].goods_name}}</view>
+                    <view style="color: rgb(153,153,153)">{{infoList[index].order_time}}</view>
+                </view>
+                <view class="money">{{infoList[index].goods_price}}智币</view>
+                <view class="state">{{infoList[index].msg}}</view>
+            </view>
+        </view>
+        <!--<view class="user" hidden="{{hidden}}">-->
+            <view class="user" hidden="{{count===index?false:true}}">
+            <view>收货人：<text>{{infoList[index].receiver}}</text></view>
+            <view>所在地：<text>{{infoList[index].location+infoList[index].address}}</text></view>
+            <view>联系电话：<text>{{infoList[index].telephone}}</text></view>
+            <view class="{{infoList[index].msg==='未处理'?'none':''}}">物流号：<text>{{infoList[index].order_id}}</text></view>
+            <view class="{{infoList[index].msg==='未处理'?'none':''}}">物流公司：<text>{{infoList[index].order_no}}</text></view>
+            <view class="{{infoList[index].msg==='未处理'?'none':''}}">发货时间：<text>{{infoList[index].time}}</text></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="container">
+    <form bindsubmit="formSubmit">
+        <view class="item">
+            <text>收货人</text>
+            <input name="user" class="input" value="{{user}}"/>
+        </view>
+        <view class="item">
+            <text>电话</text>
+            <input name="number" class="input" value="{{number}}"/>
+        </view>
+        <view class="item">
+            <text>所在地</text>
+            <view class="itemAdd">
+                <input name="address" class="add" placeholder="选择地址" value="{{province}}-{{city}}-{{county}}" focus="{{focus}}" bindfocus="open" />
+                <image src="http://47.97.185.141/xcx-images/fanhui_@3x.png"></image>
+            </view>
+
+            <view wx:if="{{condition}}" class="citypicker">
+                <picker-view  value="{{value}}" bindchange="bindChange" class="citybody">
+                    <view class="cityheader">
+                        <view bindtap="open" class="city-cancel">取消</view>
+                        <view bindtap="open" class="city-true">确定</view>
+                    </view>
+                    <picker-view-column>
+                        <view wx:for="{{provinces}}" wx:key="item" >{{item}}</view>
+                    </picker-view-column>
+                    <picker-view-column>
+                        <view wx:for="{{citys}}" wx:key="item" >{{item}}</view>
+                    </picker-view-column>
+                    <picker-view-column>
+                        <view wx:for="{{countys}}" wx:key="item" >{{item}}</view>
+                    </picker-view-column>
+                </picker-view>
+            </view>
+        </view>
+        <view class="item">
+            <input name="detailAdd" class="input" placeholder="详细地址" value="{{detailAdd}}"/>
+        </view>
+        <button formType="submit">确认提交</button>
+    </form>
+    <view class="mode" hidden="{{hint}}">
+        <view class="modeBox">
+            <text>200以内车票需3W智币兑换，可多次提交</text>
+            <text>客服将会在20天之内联系您请您耐心等待</text>
+            <view bindtap="close">确定</view>
+        </view>
+    </view>
+</view>
+

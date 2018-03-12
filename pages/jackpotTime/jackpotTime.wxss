@@ -1,0 +1,55 @@
+
+.portrait{
+    width: 189rpx;
+    height: 188rpx;
+    margin:170rpx auto;
+    text-align: center;
+    margin-bottom:100rpx;
+}
+.portrait image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8rpx solid #fff;
+}
+.portrait .name{
+    display: inline-block;
+    width: 120rpx;
+    height: 75rpx;
+    overflow: hidden;
+    font-size: 30rpx;
+    color: rgb(251,108,74);
+    font-family: "PingFang-SC-Regular";
+}
+.money{
+    width: 750rpx;
+    height: 35rpx;
+    font-size: 32rpx;
+    color:rgb(254,254,254);
+    line-height: 35rpx;
+}
+ .money image{
+    height: 30rpx;
+    width: 30rpx;
+     vertical-align: middle;
+}
+ .box{
+     margin: 130rpx auto;
+     width: 56px;
+     height: 56px;
+     position: relative;
+     font-size: 30px;
+     font-family: "PingFang-SC-Medium";
+     color: white;
+     text-align: center;
+     line-height: 56px;
+     border: 8px solid #ffffff;
+     border-radius: 50%;
+ }
+.box canvas{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -8px;
+    left:-8px;
+}

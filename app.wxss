@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  color: #fff;
+  max-width: 750rpx;
+  margin: 0 auto;
+  font-family: "PingFang-SC-Regular";
+} 
+
+page {
+  padding: 0 20 rpx 100 rpx 20 rpx;
+  box-sizing: border-box;
+  background-size: 100%;
+  background-image: url("http://47.97.185.141/xcx-images/beijingg_@3x.png");
+}

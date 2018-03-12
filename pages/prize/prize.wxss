@@ -1,0 +1,352 @@
+.head{
+    width: 257rpx;
+    height: 124rpx;
+    background-color: rgb(211,70,133);
+    border-radius: 54rpx;
+    margin: 55rpx auto;
+    position: relative;
+    padding-left: 120rpx;
+    box-sizing: border-box;
+    line-height: 124rpx;
+}
+.head image{
+    position: absolute;
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 50%;
+    border: 8rpx solid #fff;
+    top: -7rpx;
+    left: -40rpx;
+}
+.head .name{
+    position: absolute;
+    font-family: "PingFang-SC-Medium";
+    font-size: 30rpx;
+    color: white;
+    width: 150rpx;
+    height: 120rpx;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.head image .time{
+    position: absolute;
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 50%;
+    top: 0rpx;
+    left: 0rpx;
+    background: rgba(0,0,0,.4);
+    box-sizing: border-box;
+    text-align: center;
+}
+.head .time text{
+    font-family: "PingFang-SC-Regular";
+    font-size: 24rpx;
+    color: white;
+}
+.number{
+    font-size: 40rpx;
+    color: white;
+    font-family: "PingFang-SC-Regular";
+    text-align: center;
+}
+
+.answer{
+    margin: 0 auto;
+    margin-top: 69rpx;
+    width: 500rpx;
+    position: relative;
+}
+.answer .problem{
+    width: 680rpx;
+    margin-left: -80rpx;
+    margin-bottom: 100rpx;
+    font-size: 36rpx;
+    color: white;
+    font-family: "PingFang-SC-Regular";
+    text-align:center;
+}
+.answer button{
+    margin-bottom: 20rpx;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 10rpx;
+}
+.bg{
+    background-color:transparent;
+}
+.result{
+    margin: 0 auto;
+    margin-top: 100rpx;
+    width: 500rpx;
+}
+.result button{
+    margin-bottom: 20rpx;
+    color: white;
+    position: relative;
+    border-radius: 10rpx;
+}
+.result button image{
+    width: 45rpx;
+    height: 45rpx;
+    position: absolute;
+    left: 20rpx;
+    top:20rpx
+}
+/*正确*/
+.correct{
+    background-color: #a3d238;
+}
+/*错误*/
+.error{
+    background-color:#fb6c4a ;
+}
+
+/*挑战成功*/
+.success{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+.success .box{
+    margin-top: 180rpx;
+}
+.success .top{
+    margin: 0 auto;
+    width: 398rpx;
+    height: 640rpx;
+    background-color: white;
+    border-radius: 10rpx;
+}
+.success .s_head{
+    width: 120rpx;
+    height: 120rpx;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+}
+.success .s_head image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0rpx;
+    left:0rpx;
+    z-index: -1;
+}
+.success .s_head text{
+    display: inline-block;
+    width: 60rpx;
+    color: white;
+    font-family: "PingFang-SC-Bold";
+    font-size: 30rpx;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.success .s_number{
+    margin: 0 auto;
+    width: 109rpx;
+    font-family: "PingFang-SC-Regular";
+    font-size: 28rpx;
+    color: rgb(51,51,51);
+    text-align: center;
+}
+.red{
+    font-family: "PingFang-SC-Medium";
+    font-size: 34rpx;
+    color: rgb(251,108,74);
+}
+.success .s_time{
+    margin:20rpx auto;
+    text-align: center;
+    font-family: "PingFang-SC-Regular";
+    font-size: 28rpx;
+    color: rgb(51,51,51);
+}
+.success .s_ranking{
+    margin: 0 auto;
+    width: 115rpx;
+    font-family: "PingFang-SC-Regular";
+    font-size: 28rpx;
+    color: rgb(51,51,51);
+    text-align: center;
+}
+.success .s_info{
+    margin-top: 50rpx;
+}
+.success .s_info view{
+    margin: 0 auto;
+    height: 30rpx;
+    font-family: "PingFang-SC-Regular";
+    font-size: 24rpx;
+    color: rgb(153,153,153);
+    line-height: 30rpx;
+    text-align: center;
+}
+.success .s_info view image{
+    height: 20rpx;
+    width: 20rpx;
+}
+.success .continue{
+    width: 239rpx;
+    height: 239rpx;
+    margin: 12rpx auto;
+    position: relative;
+}
+.success .continue image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.success .continue text{
+    width: 180rpx;
+    position: absolute;
+    top:50%;
+    left: 57%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 36rpx;
+    color: #615995;
+}
+.success .button{
+    width: 600rpx;
+    height: 80rpx;
+    margin: 0 auto;
+}
+.success .button button{
+    width: 278rpx;
+    height: 80rpx;
+    color: white;
+    font-size: 50rpx;
+    line-height: 80rpx;
+}
+.success .button button:first-child{
+    float: left;
+    background-color: #f4ac00;
+}
+.success .button button:last-child{
+    float: right;
+    background-color: #a5cf25;
+}
+
+.last{
+    padding-top: 20rpx;
+}
+
+/*挑战失败*/
+.defeated{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+.defeated .box{
+    margin-top: 200rpx;
+}
+.defeated .top{
+    margin: 0 auto;
+    width: 398rpx;
+    height: 330rpx;
+    background-color: white;
+    border-radius: 10rpx;
+}
+.defeated .s_head{
+    width: 120rpx;
+    height: 120rpx;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+}
+.defeated .s_head image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0rpx;
+    left:0rpx;
+    z-index: -1;
+}
+.defeated .s_head text{
+    display: inline-block;
+    width: 60rpx;
+    color: white;
+    font-family: "PingFang-SC-Bold";
+    font-size: 30rpx;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.defeated .s_info view{
+    margin: 0 auto;
+    height: 30rpx;
+    font-family: "PingFang-SC-Regular";
+    font-size: 24rpx;
+    color: rgb(153,153,153);
+    line-height: 30rpx;
+    text-align: center;
+}
+.defeated .s_info view image{
+    height: 20rpx;
+    width: 20rpx;
+}
+.defeated .continue{
+    width: 239rpx;
+    height: 239rpx;
+    margin: 12rpx auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.defeated .continue image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.defeated .continue text{
+    width: 180rpx;
+    position: absolute;
+    top:50%;
+    left: 57%;
+    font-size: 36rpx;
+    color: #615995;
+    transform: translateX(-50%) translateY(-50%);
+}
+.defeated .button{
+    width: 600rpx;
+    height: 80rpx;
+    margin: 0 auto;
+}
+.defeated .button button{
+    width: 278rpx;
+    height: 80rpx;
+    color: white;
+    font-size: 50rpx;
+    line-height: 80rpx;
+}
+.defeated .button button:first-child{
+    float: left;
+    background-color: #f4ac00;
+}
+.defeated .button button:last-child{
+    float: right;
+    background-color: #a5cf25;
+}
+.defeated .sorry{
+    font-family: "PingFang-SC-Regular";
+    font-size: 22rpx;
+    color: rgb(51,51,51);
+    text-align: center;
+    margin-top: 30rpx;
+}

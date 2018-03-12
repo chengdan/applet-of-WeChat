@@ -1,0 +1,186 @@
+page,.container{
+    padding: 0;
+}
+/*用户信息*/
+.user{
+    width: 100%;
+    height: 300rpx;
+    margin-top: 60rpx;
+    position: relative;
+}
+.user .firstUser,.lastUser{
+    width:340rpx;
+    height: 215rpx;
+}
+.user .firstUser .time,.lastUser .time{
+    width: 142rpx;
+    height: 142rpx;
+    position: absolute;
+    top:50%;
+    line-height: 142rpx;
+    transform: translateY(-50%);
+    font-size: 70rpx;
+    text-align: center;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 50%;
+}
+.user .firstUser .time{
+    right: 20rpx;
+}
+.lastUser .time{
+    left: 20rpx;
+}
+.user .firstUser{
+    background-color: #d34685;
+    border-radius: 0 150rpx 150rpx 0;
+    position: absolute;
+}
+.user .firstUser .userInfo{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left:55rpx;
+}
+.user .firstUser .userInfo image{
+    width: 25rpx;
+    height: 25rpx;
+}
+.user .pic{
+    width: 142rpx;
+    height: 142rpx;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border: 10rpx solid #fff;
+    box-sizing: border-box;
+}
+.user .firstUser image{
+    right: 20rpx;
+}
+.user .lastUser{
+    position: absolute;
+    background-color: #5c89e8;
+    border-radius: 150rpx 0  0 150rpx;
+    right: 0;
+}
+.user .lastUser image{
+    left: 20rpx;
+}
+.user .lastUser .userInfo image{
+    width: 25rpx;
+    height: 25rpx;
+}
+.user .lastUser .userInfo{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 190rpx;
+}
+
+.user .progress{
+    width: 100%;
+    position: absolute;
+    bottom: -10rpx;
+}
+.user .progress view{
+    position: absolute;
+    width: 260rpx;
+    height: 16rpx;
+    background-color: rgb(50,40,140);
+    border: 2rpx solid rgb(188,181,255);
+    border-radius: 8rpx;
+    box-sizing: border-box;
+}
+/*左边*/
+.user .progress .fl>.bar{
+    height: 100%;
+    background-color: rgb(251,108,74);
+    border: none;
+}
+.user .progress view.fl{
+    left: 10rpx;
+}
+
+/*右边*/
+.user .progress .fr>.bar{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251,108,74);
+    border: none;
+}
+
+.user .progress view.fr{
+    right: 10rpx;
+}
+.user .progress text{
+    position: absolute;
+    top: -10rpx;
+}
+.user .progress text.fl{
+    left: 0;
+}
+.user .progress text.fr{
+    right: 0;
+}
+/*提示*/
+.hint{
+    width: 100%;
+    text-align: center;
+    font-size: 34rpx;
+    font-weight: 700;
+}
+/*题目*/
+.topic{
+    margin: 50rpx 0;
+    box-sizing: border-box;
+}
+.topic label{
+    width: 100%;
+    display: block;
+    font-size: 34rpx;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35rpx;
+}
+.answer{
+    margin: 0 auto;
+    width: 500rpx;
+}
+.answer button{
+    margin-bottom: 20rpx;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 10rpx;
+}
+.bg{
+    background-color:transparent;
+}
+.result{
+    margin: 0 auto;
+    margin-top: 100rpx;
+    width: 500rpx;
+}
+.result button{
+    margin-bottom: 20rpx;
+    color: white;
+    position: relative;
+    border-radius: 10rpx;
+}
+.result button image{
+    width: 45rpx;
+    height: 45rpx;
+    position: absolute;
+    left: 20rpx;
+    top: 35rpx
+}
+/*正确*/
+.correct{
+    background-color: #a3d238;
+}
+/*错误*/
+.error{
+    background-color:#fb6c4a ;
+}

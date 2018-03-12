@@ -1,0 +1,22 @@
+<view class="container">
+    <!--用户信息-->
+    <view class="user">
+        <view class="firstUser">
+            <text>{{userName}}</text>
+            <image src="{{userPic}}"></image>
+        </view>
+        <image src="http://47.97.185.141/xcx-images/vs_@3x.png"></image>
+        <view class="lastUser">
+            <view class="pic">?</view>
+            <text>...</text>
+        </view>
+    </view>
+
+    <text>对方扭扭捏捏还没到，可能是个姑娘，再等等...</text>
+
+    <!--分享按钮-->
+    <view class="btn">
+        <button class="bey">拜拜</button>
+        <button class="next" open-type="share">随机匹配</button>
+    </view>
+</view>

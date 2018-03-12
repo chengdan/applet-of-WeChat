@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="exchange" bindtap="getRecord">我的兑换</view>
+    <view class="goods">
+        <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+            <view class="itemInfo">
+                <image src="{{'http://datiback.51laiding.com/'+list[index].goods_photo}}"></image>
+                <view class="info">
+                    <view class="title">{{list[index].goods_name}}</view>
+                    <view class="money">
+                        <view class="zb">智币：<text>{{list[index].goods_price}}</text></view>
+                        <view class="exBtn" bindtap="getInfo" id="{{list[index].id}}" data-prize="{{list[index].goods_price}}">兑换</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
